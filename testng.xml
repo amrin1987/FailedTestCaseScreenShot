@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="New Test">
+        <classes>
+            <class name="org.PassedTest.FarmerMarket">
+                <methods>
+                    <include name="getTitle"/>
+                    <include name="getHeader"/>
+                </methods>
+            </class>
+            <class name="FailedTest.org.failedTest">
+               <methods>
+                <include name="chooseMarket"/>
+                <include name="getPhone"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
